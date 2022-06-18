@@ -9,10 +9,10 @@ import { autocompleteClasses, getAppBarUtilityClass } from '@mui/material';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const Item = styled(Button)(( ) => ({
+const Item = styled(Typography)(( ) => ({
   backgroundColor: 'gray',
   padding: 7,
-  textAlign: 'right',
+  textAlign: 'left',
   color: 'white',
   borderRadius: 20,
   /*display: 'flex'*/
@@ -29,7 +29,7 @@ const Items = styled(Stack)(( ) => ({
 
 export default function DispChat() {
   return (
-    <Box sx={{ width: '25%' }}>
+    <Box sx={{ width: '100%' }}>
       <Items  spacing={2}>
         <Item>Item 1</Item>
         <Item>Item 2</Item>
@@ -37,8 +37,6 @@ export default function DispChat() {
         <Box >
           <Item align='center'>Typo</Item>
         </Box>
-        <Button variant="contained" width='20'>Contained</Button>
-        <p float='left'>pppp</p>
       </Items>
     </Box>
   );

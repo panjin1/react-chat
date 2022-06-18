@@ -39,11 +39,12 @@ export default function Notification() {
     <div>
       <Button onClick={handleClick}>Open simple snackbar</Button>
       <Snackbar
-        open={open}
-        /*autoHideDuration={6000}*/
-        onClose={handleClose}
-        message="Note archived"
-        action={action}
+        open={open}      /*autoHideDuration={6000}*/  onClose={handleClose}
+        message="Note archived"   action={action}
+      />
+       <Snackbar
+        open={open}      /*autoHideDuration={6000}*/  onClose={handleClose}
+        message="Note archived"   action={action}
       />
     </div>
   );

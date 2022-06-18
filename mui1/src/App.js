@@ -1,10 +1,10 @@
 import DispChat from './components/DispChat';
-
+import NotiCards from './components/NotiCards';
 
 function App() {
   return (
     <div>
-      <DispChat/>
+      <NotiCards/>
     </div>
   );
 }
